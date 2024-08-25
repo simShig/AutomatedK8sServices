@@ -27,7 +27,7 @@ while True:
     # Print 10-minute average -  every 10 minutes
     if len(prices) == 10:
         average_price = sum(prices) / 10
-        print(f"10-Minute Average Bitcoin Price: {average_price}$  ({datetime.datetime.now()}")
+        print(f"10-Minute Average Bitcoin Price: {average_price}$  ({datetime.datetime.now()})")
         prices = []  # Reset the prices list for the next 10-minutes
 
     time.sleep(60)
